@@ -1,0 +1,85 @@
+body{
+    background-image: url() !important;
+}
+header ul.menu > li.current-menu-item > a, header ul.menu > li:hover > a, .loader:before, .cPrimary, .loader, .single .bread_crumb_area .breadcrumb .page_link a:hover, header .container .logo > span, header ul.menu li a:hover, header ul.menu > li:hover > a, header ul.menu > li.current-menu-item > a, .feature_area .features .feature_dsc a.read_me:hover, .feature_area .features .single_feature:hover .sf_inner h4, .pricing_area .single_price .price_head .h1, .pricing_area .single_price .price_body ul li:before, .testimonial_area .tst_btn a, .faq_area .newsletter form input[type="submit"], footer .footer_top .widget.widget_link li a:hover, footer .footer_top .widget_contact ul li a:hover, footer .footer_top .widget_contact ul li a i, footer .footer_top .footer_social a, .blog_area aside section .single_recent .h5:hover, .blog_area aside section .cat-links li a:hover, .blog_area .comment_form form input[type="submit"]:hover, .faq_area .newsletter form button, footer .footer-contact-info ul li a i, .blog_area .post_excerpt a, .blog_area .entry-header a,  .widget ul li a:hover, #wp-calendar tr td a, .blog_area .postDate a, .blog_area .post-content a, .comment-box .logged-in-as a, .comment-box form#commentform input[type="submit"]:hover, .widget .widget_title a 
+{
+    color: #1e79f2 !important;
+}
+.btn_link.default-btn, header ul.menu > li > a:before, .header-area ul li ul, footer .footer_btm a.top_scrl, .styler .icon, .styler .styleInner .single_style .style_btn a.active, .cPrimary_bg, .styler .icon, .styler .styleInner .single_style .style_btn a.active, .styler .styleInner .single_style .single_color, .styler .styleInner .single_style .single_bg, .slicknav_btn, .slicknav_nav, .loader, .loader:before, .loader:after, .default-btn, header ul.menu > li > a:before, .header-area ul li ul, .feature_area .features .single_feature .sf_inner:before, .video_area:before, .video_area:after, .brand_area .brand_slider .single_slide:before, .funfact_area, .pricing_area .single_price.active:before, .faq_area .newsletter, .faq_area .newsletter form input[type="email"], .cta_2, .get_touch .modal-dialog .modal-content .modal-close, .get_touch .modal-dialog .modal-content form input[type="submit"], footer .footer_top .widget_contact a.btn, footer .footer_btm .top_scrl, .blog_area .pagination li a:hover, .blog_area .pagination li > span, .blog_area .comment_form form input[type="submit"], .funfact_area, .feature-twoboxs, .single_feature .sf_inner:before, .call_ta_area, #wp-calendar tr th, #wp-calendar tr td#today, .comment-box form#commentform input[type="submit"] 
+{
+    background-color: #1e79f2 !important;
+}
+.cp_bo, .get_touch .modal-dialog .modal-content form input:not([type="submit"]):focus, .get_touch .modal-dialog .modal-content form textarea:focus, .blog_area .comment_form form input:not([type="submit"]):focus, .blog_area .comment_form form textarea:focus, .blog_area .comment_form form input[type="submit"]:hover, #wp-calendar tr th, #wp-calendar tr td, .comment-box form#commentform input[type="submit"]:hover 
+{
+    border-color: #1e79f2 !important;
+}
+.cPdark_bg, .slicknav_nav .slicknav_row:hover, .slicknav_nav a:hover, .default-btn:before, .hvr-shutter-out-horizontal:before, footer .footer_top .widget_contact a.btn:before 
+{
+    background-color: #1d6eda !important;
+}
+
+.custom-bg-gradient{
+    background-image: -webkit-linear-gradient(to bottom, #edf4fb, #fff);
+    background-image: linear-gradient(to bottom, #edf4fb, #fff);
+}
+.xs-responsive-no-padding{
+    padding-right: 90px;
+}
+.fun-fact-right-text {
+    padding: 30px 0px 40px 0px;
+}
+
+@media (max-width: 479px){
+    .floating_shapes_responsive{
+        padding-bottom: 40px;
+    }
+    .fl_sh_space{
+        height: 70px !important;
+    }
+    .margin-image{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .xs-responsive-no-padding{
+        padding: 0px !important;
+    }
+    .fun-fact-right-text{
+        padding: 0px 0px 40px 20px;
+    }
+}
+
+/* Only apply on larger screen size */
+@media only screen and (min-width: 992px)  {
+    .margin-image{
+        margin-left: -30px;
+        margin-right: -30px;
+    }
+    .feature-col-pad-left{
+        padding-left: 35px;
+    }
+    .feature-col-pad-right{
+        padding-right: 30px;
+    }
+    .feature-padding-left-no-responsive{
+        padding-left: 90px;
+    }
+}
+@media (min-width: 992px) {
+    .padding-left-no-responsive-video{
+        padding-left: 80px;
+    }
+}
+@media (min-width: 768px) and (max-width: 979px){
+    .margin-image {
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+}
+@media (min-width: 768px) and (max-width: 979px){
+    .padding-left-no-responsive-video {
+        padding-left: 40px;
+    }
+}
+
+.vc_custom_1482541666715{background-color: #ffffff !important;}.vc_custom_1483252709621{background-color: #1e79f2 !important;}.vc_custom_1482405297815{margin-top: 0px !important;border-top-width: 0px !important;padding-top: 0px !important;}.vc_custom_1483243095380{padding-top: 0px !important;padding-bottom: 0px !important;background-color: #1e79f2 !important;}.vc_custom_1483246319144{background-color: #1e79f2 !important;}.vc_custom_1483289935043{padding-right: 30px !important;}.vc_custom_1482541695718{background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1483252572743{padding-top: 60px !important;padding-bottom: 80px !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1482518875876{padding-right: 40px !important;}.vc_custom_1482380183708{margin-top: 0px !important;border-top-width: 0px !important;padding-top: 0px !important;}.vc_custom_1482418868776{padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1482418859963{border-bottom-width: 0px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1483292478369{padding-top: 50px !important;padding-bottom: 50px !important;}.vc_custom_1482466340275{padding-right: 25px !important;}.vc_custom_1482466364360{padding-right: 25px !important;}.vc_custom_1482466369877{padding-right: 25px !important;}
+

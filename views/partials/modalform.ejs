@@ -1,0 +1,32 @@
+        <div class="modal get_touch fade" id="contact-modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content relative">
+                    <a href="#" class="modal-close" data-toggle="modal" data-target="#contact-modal">X</a>
+                    <div class="modal_head">
+                        <div class="h2">Обратная связь</div>
+                        <p>пришлите нам сообщение, и мы будем на связи</p>
+                    </div>
+                    <div role="form" class="wpcf7" id="wpcf7-f428-o1" lang="en-US" dir="ltr">
+                        <div class="screen-reader-response"></div>
+                        <form action="/input_contact" method="post" class="wpcf7-form" novalidate="novalidate">
+                            <p>
+                                <span class="wpcf7-form-control-wrap text">
+                                    <input type="text" name="client" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Ваше имя" />
+                                </span>
+                                <br />
+                                <span class="wpcf7-form-control-wrap email">
+                                    <input type="email" name="email" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Введите Ваш email адрес" />
+                                </span>
+                                <br />
+                                <span class="wpcf7-form-control-wrap textarea">
+                                    <textarea name="text_request" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Текст сообщения"></textarea>
+                                </span>
+                                <br />
+                                <input type="submit" value="Отправить" class="wpcf7-form-control wpcf7-submit" />
+                            </p>
+                            <div class="wpcf7-response-output wpcf7-display-none"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
