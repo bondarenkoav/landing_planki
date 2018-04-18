@@ -8,10 +8,12 @@ var app = express();
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
+app.use(bodyParser.json()); // for parsing application/json
+app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 // create application/json parser
-var jsonParser = bodyParser.json()
+//var jsonParser = bodyParser.json()
 // create application/x-www-form-urlencoded parser
-var urlencodedParser = bodyParser.urlencoded({ extended: false })
+//var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
 
 app.get('/', function (req, res) {
@@ -43,6 +45,7 @@ const serversendOption = {
 }
 
 app.post('/input_email', function(req,res) {
+    var client_email = req.body.form_email;    
     nodemailer.createTestAccount((err, account) => {
         let transporter = nodemailer.createTransport({
             host: 'smtp.yandex.ru',
@@ -57,8 +60,8 @@ app.post('/input_email', function(req,res) {
             from: '"Cайт Planki56.ru" <amulet.seo@yandex.ru>', // sender address
             to: 'printex.orsk@gmail.com', // list of receivers
             subject: 'Planki56RU', // Subject line
-            text: 'С сайта planki56.ru пришёл контактный email. Клиент хочет чтобы Вы с ним связались по электронной почте.',
-            html: '<b>С сайта planki56.ru пришёл контактный email:</b>.'
+            text: "С сайта planki56.ru пришёл контактный email. Клиент хочет чтобы Вы с ним связались по электронной почте "+ client_email +".",
+            html: '<b>С сайта planki56.ru пришёл контактный email: <a href="mailto:'+client_email+'">'+client_email+'</a></b>.'
         };
         transporter.sendMail(mailOptions, (error, info) => {
             if (error) {
@@ -70,7 +73,10 @@ app.post('/input_email', function(req,res) {
     });
 })
 
-app.post('/input_contact', function(req,res) {
+app.post('/input_contact', function(req,res,next) {
+    var client_name = req.body.modalform_client;
+    var client_email = req.body.modalform_email;
+    var client_text = req.body.modalform_text;
     nodemailer.createTestAccount((err, account) => {
         let transporter = nodemailer.createTransport({
             host: 'smtp.yandex.ru',
@@ -86,7 +92,7 @@ app.post('/input_contact', function(req,res) {
             to: 'printex.orsk@gmail.com',
             subject: 'Planki56RU',
             text: 'С сайта planki56.ru пришло сообщение.',
-            html: '<b>С сайта planki56.ru пришло сообщение: <p>Имя: <strong>'+req.body.client+'</stron></p><p>Email: <strong>'+req.body.input_email+'</strong><p>Текст: <strong>'+req.body.text_request+'</strong>.<br/><br/><br/><p>Письмо было сформировано автоматически, не отвечайте на него.</p>'
+            html: "<b>С сайта planki56.ru пришло сообщение: <p>Имя: <strong>"+client_name+"</stron></p><p>Email: <strong>"+client_email+"</strong><p>Текст: <strong>"+client_text+"</strong>.<br/><br/><br/><p>Письмо было сформировано автоматически, не отвечайте на него.</p>"
         };
         transporter.sendMail(mailOptions, (error, info) => {
             if (error) {
